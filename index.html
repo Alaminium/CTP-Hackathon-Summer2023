@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpaper Generator</title>
+</head>
+
+<body>
     <h1>Welcome to the Wallpaper Generator</h1>
     <form method="post" action="./index.html">
         <section class="questions">
@@ -13,8 +16,6 @@
             <input type="color" id="backgroundColor" name="backgroundColor" value="black" />
             <br />
             <label for="shape">Choose a shape: </label>
-            <input type="radio" id="square" name="shape" value="Square">
-            <label for="square">Square</label>
             <input type="radio" id="rectangle" name="shape" value="Rectangle">
             <label for="rectangle">Rectangle</label>
             <input type="radio" id="circle" name="shape" value="Circle">
@@ -38,10 +39,9 @@
         <input type="submit" value="Submit" />
         </section>
     </form>
-</head>
-
-<body>
-
+    <p>View Your Wallpaper Below</p>
+    <canvas id="Canvas" width="" height=""></canvas>
+    <script src="./index.html"></script>
 </body>
 
 </html>
