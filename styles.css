@@ -1,3 +1,31 @@
-h1{
-    
+#downloadButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    transition: opacity border-width 0.5s;
+}
+
+#downloadButton:hover{
+    border-width: 4px;
+    opacity: 0.7;
+}
+
+#downloadButton:active{
+    opacity: 0.5;
+}
+
+#submitButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+}
+
+#submitButton:hover{
+    border-width: 4px;
+    opacity: 0.7;
+}
+
+#submitButton:active{
+    opacity: 0.5;
 }
