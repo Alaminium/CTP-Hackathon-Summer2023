@@ -53,7 +53,7 @@ function createShape(shape, backgroundColor, shapelineColor, shapefillingColor, 
 }
 
 function generateAbstractDrawing() {
-   // context.clearRect(0, 0, canvas.width, canvas.height);
+   //context.clearRect(0, 0, canvas.width, canvas.height);
     context.lineWidth = 2;
 
     const numberOfShapes = Math.floor(Math.random() * 10) + 5;
