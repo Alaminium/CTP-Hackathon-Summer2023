@@ -65,7 +65,7 @@ function downloadCanvas() {
     downloadLink.click();
 }
 
-document.getElementById("shapeForm").addEventListener("submit", function(event) {
+function handleSubmit(event){
     event.preventDefault(); 
     let length = document.querySelector('#length').value;
     let width = document.querySelector('#width').value;
@@ -75,8 +75,7 @@ document.getElementById("shapeForm").addEventListener("submit", function(event) 
     let shape = document.querySelector('input[name="shape"]:checked').value;
     context.clearRect(0, 0, canvas.width, canvas.height);
     createShape(shape, backgroundColor, shapelineColor, shapefillingColor, length, width);
+}
 
-});
-
-
+document.getElementById('shapeForm').addEventListener("submit", handleSubmit);
 downloadButton.addEventListener("click", downloadCanvas);
