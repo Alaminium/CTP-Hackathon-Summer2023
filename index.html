@@ -1,51 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="./styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpaper Generator</title>
-</head>
-
+﻿<!DOCTYPE html>
 <body>
-    <h1>Welcome to the Wallpaper Generator</h1>
-    <form id="shapeForm" method="post" action="./index.html">
-        <section class="questions">
-            <label for="backgroundColor">Choose a background color: </label>
-            <input type="color" id="backgroundColor" name="backgroundColor" value="black" />
+         <div class="header">
+         <h1>Wallpaper Generator</h1>
+         </div>
+        <form id="shapeForm" method="post" action="./index.html">
+            <section class="questions">
+               <div class="body">
+                <label for="backgroundColor">Choose a background color: </label>
+                <input type="color" id="backgroundColor" name="backgroundColor" value="black" />
+                <br />
+                <br>
+                <label for="shape">Choose a shape: </label>
+                <input type="radio" id="rectangle" name="shape" value="Rectangle">
+                <label for="rectangle">Rectangle</label>
+                <input type="radio" id="circle" name="shape" value="Circle">
+                <label for="circle">Circle</label>
+                <input type="radio" id="triangle" name="shape" value="Triangle">
+                <label for="triangle">Triangle</label><br>
+                <br>
+                <label for="shapelineColor">Choose a color for shape lines: </label>
+                <input type="color" id="shapelineColor" name="shapelineColor" value="black" />
+                <br />
+                <br>
+                <label for="shapefillingColor">Choose a color for shape filling: </label>
+                <input type="color" id="shapefillingColor" name="shapefillingColor" value="black" />
+                <br />
+                <br>
+                <label for="length">Enter dimensions for length: </label>
+                <input type="number" min="50" max="5150" step="50" id="length" name="length" />
+                <br />
+                <br>
+                <label for="width">Enter dimensions for width: </label>
+                <input type="number" min="50" max="1500" step="50" id="width" name="width" />
+            </section>
             <br />
-            <label for="shape">Choose a shape: </label>
-            <input type="radio" id="rectangle" name="shape" value="Rectangle">
-            <label for="rectangle">Rectangle</label>
-            <input type="radio" id="circle" name="shape" value="Circle">
-            <label for="circle">Circle</label>
-            <input type="radio" id="triangle" name="shape" value="Triangle">
-            <label for="triangle">Triangle</label><br>
-            <label for="shapelineColor">Choose a color for shape lines: </label>
-            <input type="color" id="shapelineColor" name="shapelineColor" value="black" />
-            <br />
-            <label for="shapefillingColor">Choose a color for shape filling: </label>
-            <input type="color" id="shapefillingColor" name="shapefillingColor" value="black" />
-            <br />
-            <label for="length">Enter dimensions for length: </label>
-            <input type="number" min="50" max="5150" step="1" id="length" name="length" />
-            <br />
-            <label for="width">Enter dimensions for width: </label>
-            <input type="number" min="50" max="1500" step="1" id="width" name="width" />
-            <br />
-        </section>
-        <br />
-        
-        <section class="submission"> </section>
-        <input id="submitButton" type="submit" value="Submit" />
-        </section>
-    </form>
-    <button id="generateAbstractDrawing">Generate Abstract Drawing</button>
-    <p>View Your Wallpaper Below</p>
-    <canvas id="Canvas" width="5150" height="1500" style="border: 4px solid black;"></canvas>
-    <button id="downloadButton">Download Image</button>
-    <script src="./main.js"></script>
+            <section class="submission"> </section>
+            <input id="submitButton" type="submit" value="Submit" />
+            </section>
+        </form>
+   </div>
+        <div class="body">
+          <p>View Your Wallpaper Below</p>
+        </div>
+        <canvas id="Canvas" width="5150" height="1500" style="border: 4px solid black;"></canvas>
+        <button id="downloadButton">Download Image</button>
+        <script src="./main.js"></script>
 </body>
+
 
 </html>
