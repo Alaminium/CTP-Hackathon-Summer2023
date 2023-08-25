@@ -1,9 +1,3 @@
-let shape = "";
-let backgroundColor;
-let shapelineColor;
-let shapefillingColor;
-let length;
-let width;
 
 const canvas = document.querySelector("#Canvas");
 const context = canvas.getContext("2d");
@@ -73,9 +67,15 @@ function downloadCanvas() {
 
 document.getElementById("shapeForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
-    
-    shape = document.querySelector('input[name="shape"]:checked').value;
-    createShape(shape,'green', 'blue', 'yellow', 2000, 1000);
+    let length = document.querySelector('#length').value;
+    let width = document.querySelector('#width').value;
+    let shapefillingColor = document.querySelector('#shapefillingColor').value;
+    let shapelineColor = document.querySelector('#shapelineColor').value;
+    let backgroundColor = document.querySelector('#backgroundColor').value;
+    let shape = document.querySelector('input[name="shape"]:checked').value;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    createShape(shape, backgroundColor, shapelineColor, shapefillingColor, length, width);
+
 });
 
 
