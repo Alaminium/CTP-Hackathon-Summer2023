@@ -1,12 +1,12 @@
-const canvas = document.querySelector("#Canvas");
-const context = canvas.getContext("2d");
-
-let shape;
+let shape = "";
 let backgroundColor;
 let shapelineColor;
 let shapefillingColor;
 let length;
 let width;
+
+const canvas = document.querySelector("#Canvas");
+const context = canvas.getContext("2d");
 
 function createRectangle(backgroundColor, shapelineColor, shapefillingColor, length, width){
     context.fillStyle = backgroundColor;
@@ -47,10 +47,10 @@ function createCircle(backgroundColor, shapelineColor, shapefillingColor, length
 }
 
 function createShape(shape, backgroundColor, shapelineColor, shapefillingColor, length, width){
-    if(shape === 'rectangle'){
+    if(shape === 'Rectangle'){
         createRectangle(backgroundColor, shapelineColor, shapefillingColor, length, width);
     }
-    else if(shape === 'triangle'){
+    else if(shape === 'Triangle'){
         createTriangle(backgroundColor, shapelineColor, shapefillingColor, length, width);
     }
     else{
@@ -71,5 +71,12 @@ function downloadCanvas() {
     downloadLink.click();
 }
 
-createShape('rectangle','green', 'blue', 'yellow', 2000, 1000);
+document.getElementById("shapeForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    
+    shape = document.querySelector('input[name="shape"]:checked').value;
+    createShape(shape,'green', 'blue', 'yellow', 2000, 1000);
+});
+
+
 downloadButton.addEventListener("click", downloadCanvas);
