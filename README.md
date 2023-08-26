@@ -23,3 +23,6 @@ The Wallpaper Generator is an interactive web application that allows users to g
 1. Clone the repository to your local machine.
 2. Navigate to the project folder and open `index.html` in your browser.
 3. Choose your options and generate your unique wallpaper!
+
+## Link To Project
+https://alaminium.github.io/CTP-Hackathon-Summer2023/
