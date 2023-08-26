@@ -1,84 +1,106 @@
-﻿h1{
-   text-align: center;
-   font-size: 30px;
-   font-family: Arial, Helvetica, sans-serif;
+﻿h1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Arial', Helvetica, sans-serif;
 }
+
 .header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
+        padding: 20px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 36px;
 }
+
 .body {
-  padding: 60px;
-  background: #7faefa;
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  margin-right: 1200px;
-  margin-left: 20px;
+        padding: 20px;
+        background: #f2f2f2;
+        color: black;
+        margin: 5px;
+        width: 500px;
 }
-
-
-
 
 body {
-  background-color: lightblue;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
- 
+        background-color: lightblue;
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        /* background-image: url('images/background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+
 }
 
 
 /*input number*/
 input[type=number] {
-            /*for absolutely positioning spinners*/
-            position: relative;
-            padding: 7px;
-            padding-right: 5px;
+        /*for absolutely positioning spinners*/
+        position: relative;
+        padding: 7px;
+        padding-right: 10px;
+        width: 100%;
+        max-width: 300px;
 }
 
 
 /*removes arrows for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+        -webkit-appearance: none;
+        margin: 0;
 }
 
 
 /* removes arrows for Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+        -moz-appearance: textfield;
 }
 
 
 /*button*/
 
 
-#downloadButton{
-        height: 100px;
-        width: 100px;
+#downloadButton {
+        /* height: 100px;
+        width: 100px; */
+        padding: 15px 30px;
         border-radius: 10px;
         transition: opacity border-width 0.5s;
         margin: 40px;
-   
+
 }
 
 
-#downloadButton:hover{
+#downloadButton:hover {
         border-width: 4px;
         opacity: 0.7;
 }
 
 
-#downloadButton:active{
+#downloadButton:active {
         opacity: 0.5;
 }
 
+/* Buttons */
+button,
+input[type=submit] {
+        background-color: #1abc9c;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
 
-#submitButton{
+button:hover,
+input[type=submit]:hover {
+        background-color: #16a085;
+}
+
+/* #submitButton {
         height: 100px;
         width: 100px;
         border-radius: 10px;
@@ -87,12 +109,12 @@ input[type=number] {
 }
 
 
-#submitButton:hover{
+#submitButton:hover {
         border-width: 4px;
         opacity: 0.7;
 }
 
 
-#submitButton:active{
+#submitButton:active {
         opacity: 0.5;
-}
+} */
