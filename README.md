@@ -16,6 +16,7 @@ The Wallpaper Generator is an interactive web application that allows users to g
 - HTML5: Used for structuring the web application.
 - CSS: Employed for styling the web interface.
 - JavaScript: Utilized for the interactive features and dynamically updating the canvas.
+- Bootstrap: Used for responsive design.
 
 ## Getting Started
 
