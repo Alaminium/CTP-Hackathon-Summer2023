@@ -26,3 +26,6 @@ The Wallpaper Generator is an interactive web application that allows users to g
 
 ## Link To Project
 https://alaminium.github.io/CTP-Hackathon-Summer2023/
+
+## Live Demo
+[Click here to view live demo](https://youtu.be/8jMAzIkVZCo?si=i7v3dkHDV9Jc-RvE)
