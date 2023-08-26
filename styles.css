@@ -100,6 +100,11 @@ input[type=submit]:hover {
         background-color: #16a085;
 }
 
+#backgroundColor.form-control,
+#shapelineColor.form-control,
+#shapefillingColor.form-control {
+        width: 200px;
+}
 /* #submitButton {
         height: 100px;
         width: 100px;
