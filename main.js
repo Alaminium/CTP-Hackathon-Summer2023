@@ -2,6 +2,8 @@
 const canvas = document.querySelector("#Canvas");
 const context = canvas.getContext("2d");
 
+context.fillStyle = "white";
+context.fillRect(0, 0, canvas.width, canvas.height);
 function createRectangle(backgroundColor, shapelineColor, shapefillingColor, length, width) {
     context.fillStyle = backgroundColor;
     context.fillRect(0, 0, length, width);
