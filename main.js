@@ -53,7 +53,7 @@ function createShape(shape, backgroundColor, shapelineColor, shapefillingColor, 
 }
 
 function generateAbstractDrawing() {
-   //context.clearRect(0, 0, canvas.width, canvas.height);
+    //context.clearRect(0, 0, canvas.width, canvas.height);
     context.lineWidth = 2;
 
     const numberOfShapes = Math.floor(Math.random() * 10) + 5;
@@ -117,3 +117,7 @@ function handleSubmit(event) {
 
 document.getElementById('shapeForm').addEventListener("submit", handleSubmit);
 downloadButton.addEventListener("click", downloadCanvas);
+
+document.getElementById("clearCanvasButton").addEventListener("click", function () {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+});
